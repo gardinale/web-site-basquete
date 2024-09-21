@@ -5,7 +5,7 @@
    --primary-color: #f7f0f0; /*texto*/
    --hover-menu: #0bd1ef;
    --icon-color: #5c34ea;
-   --icone-tema: #08e3dc;
+   --icone-tema: #0bd1ef;
 }
 
 :root[data-theme="light"] {
@@ -40,6 +40,7 @@ i{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    list-style: none;
 
 }
 /* fim do reset */
@@ -79,13 +80,49 @@ i{
     gap: 1rem;
 }
 
+.menu-item {
+    width: 100%;
+}
 
 
 
 
 
-
- /* .header-nav {
+.header-nav {
     display: none;
- }
- */
+ } 
+
+
+
+
+ /* menu mobile */
+
+.menu-mobile {
+    width: 100vw; /* v w =viewport width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #0bd1ef;
+} 
+
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+/* responsividade
+responsivo */
+
+@media (min-width: 768px) {
+    #header {
+       position: fixed;
+       padding: 1rem 6rem;
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+    }
+}

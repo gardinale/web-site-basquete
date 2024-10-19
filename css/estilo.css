@@ -5,7 +5,7 @@
     --hover-menu: #f3f3f5;
     --menu-texto:  #eeecec;
     --icon-color: #3cbdf0;
-    --icone-tema: #d7b21e;
+    --icone-tema: #ec6308;
     --hover-social: #3cbdf0;
     --cor-titulo: #3cbdf0;
     --cor-texto: #f3f3f5;
@@ -23,6 +23,7 @@
     --cor-texto: #0e0e0f;
     --texto-botao: #141111f6;
     --cor-lista: #181414;
+    --icone-tema: #0b0d0e;
     
 
 }
@@ -148,6 +149,7 @@ p {
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid red;
+    z-index: 99999;
 }
 
 .menu-mobile .menu-link {

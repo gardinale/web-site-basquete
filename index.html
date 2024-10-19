@@ -15,8 +15,8 @@
     <!-- Boxicons Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
@@ -165,16 +165,16 @@
 
     <section id="projetos" class="projetos">
 
-        <h2> Projetos </h2>
+        <h2 data-aos="zoom-out-down" data-aos-delay="300"> Projetos </h2>
 
-        <div class="projetos-container">
+        <div class="projetos-container" data-aos="zoom-out-down" data-aos-delay="1000">
 
             <div class="projeto-card"> <!-- proj 1 -->
 
                 <img src="img/projetos/NBA LOGO.webp" alt="" 
                 class="card-cover">
 
-                <div class="card-body">
+                <div class="card-body"> 
 
                    <h3 class="card-title"> Gardinale Store NBA </h3>
 
@@ -311,6 +311,75 @@
 
             </div> <!-- fim proj 2 -->
 
+
+            <div class="projeto-card"> <!-- proj 3 -->
+
+                <img src="img/projetos/jordan x lebron.jpg" alt="" 
+                class="card-cover">
+
+                <div class="card-body">
+
+                   <h3 class="card-title"> GOATS NBA </h3>
+
+                   <p class="card-descricao"> Trajetória das lendas</p>
+
+                   <ul class="card-lista">
+
+                    <li class="card-item">
+                        <i class='bx bx-basketball'></i>
+                        Trajetória Lebron James
+                    </li>
+
+                    <li class="card-item">
+                        <i class='bx bx-basketball'></i>
+                        Trajetória Jordan
+                    </li>
+
+                    <li class="card-item">
+                        <i class='bx bx-basketball'></i>
+                        Morte mais impactante da NBA
+                    </li>
+
+                   </ul>
+
+                   <div class="card-button">
+
+                    <button class="btn btn-primary">
+
+                        <a href="https://www.lojanba.com/?gad_source=1&gclid=EAIaIQobChMIxJi_pLX3iAMVO9XCBB1ySwWXEAAYASAAEgIlKfD_BwE" target="_black">
+                           <span> 🏀 Ver loja 🏀 </span>
+                           <i class="bi bi-arrow-up-right"> </i>
+                        </a>
+                   
+
+                    </button>
+
+                    <button class="btn">
+                        <a href="https://www.nike.com.br/nav/esportes/basquete/genero/masculino/idade/adulto/tipodeproduto/calcados" target=" _blank">
+                            <span> Tênis Nike</span>
+
+                    
+                        </a>
+
+                    </button>
+
+                    <button class="btn">
+                        <a href="https://www.decathlon.com.br/pesquisa/?q=acessorio+basquete&sort=score_desc&page=1" target=" _blank">
+                            <span> acessórios de basquete</span>
+
+                    
+                        </a>
+
+                    </button>
+
+
+
+
+                   </div> <!--  fim card button -->
+                </div> <!-- fim card body -->
+
+            </div> <!-- fim proj 3 -->
+
         </div> <!-- fim projeto container-->
 
     </section>
@@ -329,9 +398,10 @@
 
     </section>
 
-    <script src="js/script.js"> 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    </script>
+    <script src="js/script.js"> </script>
 
   </body>
 </html>

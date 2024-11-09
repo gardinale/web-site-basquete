@@ -64,11 +64,11 @@ h1 {
 }
 
 h2 {
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p, span, li{
@@ -343,6 +343,88 @@ p {
     pointer-events: none;
     border-radius: 50rem;
     border: 8px solid #df5505;
+}
+ 
+.sobre-descricao { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.sobre-icones {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.sobre-icones i {
+    font-size: 1.25rem;
+    color: #169adc;
+}
+
+.sobre-conteudo1,
+.sobre-conteudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.sobre-conteudo2 .col1, 
+.sobre-conteudo2 .col2 { 
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.sobre-conteudo2 .col1 .row1, 
+.sobre-conteudo2 .col1 .row2 { 
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.accordion-header { 
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.accordion-header span {
+    color: var(--titulo-accordion);
+}
+
+/* esconder as respostas */
+.accordion-body {  
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+    border: 1px solid var(--primary-color);
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--body-accordion);
+}
+
+/* conteudo aparece após o click */
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {  /* adicionar classe no icone */
+    transform: rotate(180deg);
 }
 
 

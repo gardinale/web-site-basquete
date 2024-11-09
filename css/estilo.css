@@ -11,6 +11,11 @@
     --cor-texto: #f3f3f5;
     --texto-botao: #f5f3f3f6;
     --cor-lista: #f3eaea;
+    --titulo-accordion: #f3eaea;
+    --border-color:  #3cbdf0;
+
+    
+    
 }
 
 :root[data-theme="light"] {
@@ -24,7 +29,9 @@
     --texto-botao: #141111f6;
     --cor-lista: #181414;
     --icone-tema: #0b0d0e;
-    
+    --titulo-accordion: #141212;
+    --border-color:  #00aeff;
+   
 
 }
 
@@ -32,8 +39,8 @@
 body{
     background: var(--primary-bg);  /* fundo */
     color: var(--primary-color);
-    font-family: "Nosifer", sans-serif;
-    font-size: 22px; 
+    font-family: "Sour Gummy", sans-serif; /* letra sobre mim */
+    font-size: 25px; 
 }
 
 html[data-theme="light"] .logo {
@@ -58,7 +65,7 @@ b {
 }
 
 h1 {
-    font-family: "Sedgwick Ave Display", cursive;
+    font-family: "Sedgwick Ave Display";
     font-size: 2.5rem;
     font-weight: 200;
 }
@@ -427,8 +434,28 @@ p {
     transform: rotate(180deg);
 }
 
+.contato {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color); /* variavel borda */
+    border-bottom: 1px solid var(--border-color); /* variavel borda */
+}
+.contato p{
+    text-align: center;
+    font-family: "Sour Gummy", sans-serif"
+}
 
+.contato .btn {
+    width: auto; /* correção */
+}
 
+.contato .email {
+    text-transform: uppercase; /* deixar texto em caixa alta */
+}
 
 
 
@@ -462,7 +489,13 @@ p {
     #home, .projetos, .sobre, .contato  {
         padding: 8rem 6rem 4rem 6rem;
     }
-}        /* fim 786 */
+
+    .contato {
+        padding: 6rem;
+    }
+
+    
+}        /* fim 768 */
 
 @media (min-width: 992px) {
     .projeto-card {
@@ -476,6 +509,16 @@ p {
 
     .card-cover {
         width: 55%;
+    }
+
+    .sobre {
+        gap: 5rem;
+    }
+
+    .sobre-conteudo1, .sobre-conteudo2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+
     }
 } /* fim media 992 */
 

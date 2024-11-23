@@ -11,8 +11,13 @@
     --cor-texto: #f3f3f5;
     --texto-botao: #f5f3f3f6;
     --cor-lista: #f3eaea;
-    --titulo-accordion: #f3eaea;
+
+
+    --titulo-accordion: #3cbdf0;
     --border-color:  #3cbdf0;
+
+    --body-accordion: #0a1316;
+   
 
     
     
@@ -29,8 +34,10 @@
     --texto-botao: #141111f6;
     --cor-lista: #181414;
     --icone-tema: #0b0d0e;
-    --titulo-accordion: #141212;
+    --titulo-accordion: #00aeff;
     --border-color:  #00aeff;
+    --body-accordion: #eee8e8;
+
    
 
 }
@@ -394,25 +401,25 @@ p {
     gap: .5rem;
 }
 
-.accordion-header { 
+.accordion-header1 { 
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--primary-color);
-    background: transparent;
+    background: var(--body-accordion);
     text-align: left;
     cursor: pointer;
     transition: ease-in-out .3s;
 }
 
-.accordion-header span {
+.accordion-header1 span {
     color: var(--titulo-accordion);
 }
 
 /* esconder as respostas */
-.accordion-body {  
+.accordion-body1 {  
     display: none;
     padding: 1.25rem;
     flex-direction: column;
@@ -421,12 +428,12 @@ p {
     border: 1px solid var(--primary-color);
 }
 
-.accordion-item.active .accordion-header {
+.accordion-item.active .accordion-header1 {
     background: var(--body-accordion);
 }
 
 /* conteudo aparece após o click */
-.accordion-item.active .accordion-body {
+.accordion-item.active .accordion-body1 {
     display: flex;
 }
 
@@ -455,6 +462,22 @@ p {
 
 .contato .email {
     text-transform: uppercase; /* deixar texto em caixa alta */
+}
+
+/* Roda Pé */
+
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p a{
+    color: #ff7300;
 }
 
 
